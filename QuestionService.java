@@ -23,7 +23,7 @@ public class QuestionService {
         System.out.println(q.getOpt3());
         System.out.println(q.getOpt4());
 
-        System.out.println("Your answer is: ");
+        System.out.println("Sua resposta: ");
         selection[i] = sc.nextLine();
         while(!selection[i].equals(q.getOpt1()) && (!selection[i].equals(q.getOpt2())) && (!selection[i].equals(q.getOpt3())) && (!selection[i].equals(q.getOpt4()))){
             System.out.println("Erro. Digite uma das 4 opções");
@@ -31,7 +31,7 @@ public class QuestionService {
         }
         i++;
     }
-    System.out.println("You answered:");
+    System.out.println("Você respondeu: ");
     for(String s : selection){
         System.out.println(s);
     }
